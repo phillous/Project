@@ -1,0 +1,87 @@
+<%- include("./partials/body.ejs") %>
+    <div class="d-flex">
+        <p class="border-end border-secondary pe-3 lead fw-bold">Product</p>
+        <span class="material-icons-outlined text-primary ms-3">help</span>
+    </div>
+    <div class="card shadow-lg border border-0 mt-2">
+        <div class="card-body">
+            <form>
+                <div class="row my-2">
+                  <div class="col">
+                    <label for=""></label>
+                    <select class="form-select">
+                        <option>Nigerian(NGN)</option>
+                    </select>
+                  </div>
+                  <div class="col">
+                    <label for="">Product Name</label>
+                    <input type="text" class="form-control" placeholder="Product Name" name="Pname">
+                  </div>
+                  <div class="col">
+                    <label for="">Product Description</label>
+                    <input type="text" class="form-control" placeholder="Product Description" name="">
+                  </div>
+                  <div class="col">
+                    <label for="">Product Category</label>
+                    <select class="form-select">
+                        <option selected>Select</option>
+                        <option></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row my-2">
+                    <div class="col-6">
+                        <label for="">DOES THIS PRODUCT HAVE VARIATIONS (COLORS, SIZES ETC)?</label>
+                        <select class="form-select">
+                            <option selected>Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="col-6"></div>
+                </div>
+                <div class="row my-2 mb-3">
+                    <div class="col-12">
+                        <label for="">DO YOU HAVE AN OFFER FOR THIS PRODUCT?</label>
+                        <select class="form-select">
+                            <option selected>Select</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>  
+                    </div>
+                </div>
+                <hr>
+                <div class="row my-3">
+                    <div class="col-12">
+                        <label for="">
+                            LINK TO FILE DOWNLOAD FOR SUCCESSFUL DELIVERY
+                            <small>If you have a PDF or Video file to share to customers that bought this product, paste the link here. 
+                                    It will appear on the invoice sent to customers email once you mark their order as Delivered
+                            </small>
+                        </label>
+                        <input type="text"class="form-control"name="Lfile">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col">
+                        <label for="">Text to show</label>
+                        <input type="text"class="form-control" placeholder="example:please click here to Download your FREE PDF GUIDE" name="Tfile">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col">
+                        <label for="">LOW STOCK ALERT QUANTITY (TOTAL)*</label>
+                        <input type="number" class="form-control" name="LstockTotal">
+                    </div>
+                    <div class="col">
+                        <label for="">LOW STOCK ALERT QUANTITY (AGENTS) *</label>
+                        <input type="number" class="form-control" name="LstockAgent">
+                    </div>
+                    <div class="col">
+                        <label for="">EMAIL(S) TO RECEIVE LOW STOCK ALERT (SEPARATE EACH WITH COMMA)*</label>
+                        <input type="email" class="form-control" name="LstockEmail">
+                    </div>
+                    
+                </div>
+            </form>
+            <%- include("./partials/footer.ejs") %>

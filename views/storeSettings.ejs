@@ -1,0 +1,177 @@
+<%- include("./partials/body.ejs") %>
+    <div class="d-flex">
+        <p class="border-end border-secondary pe-3 lead fw-bold">Store Settings</p>
+        <span class="material-icons-outlined text-primary ms-3">help</span>
+    </div>
+    <div class="card shadow-lg border border-0">
+        <div class="card-body">
+            <form action="#" class="form-control border border-0">
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">STORE NAME*</label>
+                    <input type="text" class="form-control" id="storeName" placeholder="" name="StoreName">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">STORE COUNTRY*</label>
+                    <select class="form-select" disabled>
+                        <option>NIGERIAN(NGN)</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="storeName" class="form-label text-muted">OFFICE STATE/REGION*</label>
+                        <select class="form-select">
+                            <option>DELTA</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="storeName" class="form-label text-muted">WARE-HOUSE STATE/REGION (IF ANY)*</label>
+                        <select class="form-select">
+                            <option>Lagos</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">STORE ADDRESS*</label>
+                    <input type="text" class="form-control" id="storeName" placeholder="" name="StoreName">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">PHONE NUMBER*</label>
+                    <input type="number" class="form-control" id="storeName" placeholder="" name="StoreName">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">WHATSAPP NUMBER*<br>
+                                                                        <small class="fw-bold">(MAKE SURE YOU ADD YOUR COUNTRY CODE, WITHOUT THE + SIGN AND WITHOUT THE FIRST ZERO OF YOUR PHONE NUMBER. 
+                                                                        EXAMPLE: 2348012345678 WHERE 234 IS THE COUNTRY CODE)</small></label>
+                    <input type="number" class="form-control" id="storeName" placeholder="" name="StoreName">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">Email*</label>
+                    <input type="email" class="form-control" id="storeName" placeholder="" name="StoreName">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="storeName" class="form-label text-muted">INVOICE FOOTER MESSAGE</label>
+                    <input type="text" class="form-control" id="storeName" placeholder="" name="StoreName">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="" class="mb-2 mt-2">OPTIONAL TABS TO SHOW ON ORDERS PAGE</label>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="" name="" value="yes" checked>
+                                <label class="form-check-label" for="mySwitch">Confirmed Orders Tab</label>
+                            </div>
+                            <div class="col-4 form-check form-switch ms-3">
+                                <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                <label class="form-check-label" for="highSwitch">Shipped Orders Tab</label>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="" name="" value="yes" checked>
+                                <label class="form-check-label" for="mySwitch">Returned Orders Tab</label>
+                            </div>
+                            <div class="col-4 form-check form-switch ms-3">
+                                <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                <label class="form-check-label" for="highSwitch">After-Sale Call Tab</label>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                        <div class="row mb-1">
+                            <div class="col form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="" name="" value="yes" checked>
+                                <label class="form-check-label" for="mySwitch">Send me an email everytime someone logs into my SniperCRM account</label>
+                            </div>
+                            
+                            <div class="col">
+                                <label class="form-label" for="highSwitch">SEND ME LOW STOCK NOTIFICATION ON:</label>
+                                <div class="d-flex">
+                                    <div class="form-check form-switch ms-3">
+                                        <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                        <label class="form-check-label" for="highSwitch">SMS</label>
+                                    </div>
+                                    <div class="form-check form-switch ms-3">
+                                        <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                        <label class="form-check-label" for="highSwitch">EMAIL</label>
+                                    </div>
+                                    <div class="form-check form-switch ms-3">
+                                        <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                        <label class="form-check-label" for="highSwitch">WHATSAPP</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="" name="" value="yes" checked>
+                                <label class="form-check-label" for="mySwitch">Send me an email everytime someone logs into my SniperCRM account</label>
+                            </div>
+                            
+                            <div class="col">
+                                <label class="form-label" for="highSwitch">SEND ME REMINDER OF SCHEDULED ORDERS:</label>
+                                <div class="d-flex mt-0">
+                                    <div class="form-check form-switch ms-3">
+                                        <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                        <label class="form-check-label" for="highSwitch">EMAIL</label>
+                                    </div>
+                                    <div class="form-check form-switch ms-3">
+                                        <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                        <label class="form-check-label" for="highSwitch">WHATSAPP(If Active)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="" name="" value="yes" checked>
+                                <label class="form-check-label" for="mySwitch">Force 'Delivered Quantity' Selection From Available Product Offers?</label>
+                            </div>
+                            
+                            <div class="col">
+                                <div class="form-check form-switch ms-3">
+                                    <label class="form-check-label" for="highSwitch">SEND MY CUSTOMERS EMAIL INVOICE?</label>
+                                    <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="" name="" value="yes" checked>
+                                <label class="form-check-label" for="mySwitch">Prevent More Than 1 Order Submission/Customer Within 24 Hours?</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                    <label class="form-check-label" for="highSwitch">Notify Delivery Agents Via WhatsApp When Orders Are Assigned To Them?</label>
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                    <label class="form-check-label" for="highSwitch">On Order Delivered, Allow To Select Closer?</label>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="highSwitch" name="lightmode" value="yes" checked>
+                                <label class="form-check-label" for="highSwitch">Allow SniperCRM manage my Products Inventory?</label>
+                            </div> 
+                        </div>
+                        <p class="text-danger mx-0">If you turn this off, SniperCRM WILL NOT be held accountable if your Inventory records are not accurate!</p>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary text-light float-end">Save</button>
+            </form>
+        </div>    
+    </div>
+
+                
+
+
+            
+        </div>
+    </div>
+
+<%- include("./partials/footer.ejs") %>

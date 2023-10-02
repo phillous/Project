@@ -1,0 +1,78 @@
+<%- include("./partials/body.ejs") %>
+                <div class="d-flex">
+                    <p class="border-end border-secondary pe-3 lead fw-bold">Product</p>
+                    <span class="material-icons-outlined text-primary ms-3">help</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <label for="">Products</label>
+                            <div class="container-fluid ps-0">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <select class="form-select">
+                                            <option>Select Product</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="/addproduct" class="btn btn-primary">Add Product</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="btn btn-primary w-100">State Delivery Fee</a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="btn btn-primary w-100">Custom States</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    
+                <div class="card mt-3 shadow-lg bg-body rounded border-0">
+                    <div class="card-body overflow-x-auto">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-light border dropdown-toggle" data-bs-toggle="dropdown">
+                              Select Action
+                            </button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary border border-end">Excel</button>
+                            <button type="button" class="btn btn-primary border border-end">Print current page</button>
+                            <button type="button" class="btn btn-primary">Print all</button>
+                          </div>
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th>ID</th>
+                                <th class="w-5">CATEGORY NAME</th>
+                                <th>BRAND NAME</th>
+                                <th class="w-5">BRAND PHONE/EMAIL</th>
+                                <th class="w-5">BRAND WHATSAPP NUMBER</th>
+                                <th>SENDER ID</th>
+                                <th>ACTION</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                                <td>john@example.com</td>
+                                <td><div class="d-flex">
+                                        <span class="material-icons-outlined text-primary">edit</span>
+                                        <span class="material-icons-outlined text-primary">delete</span>
+                                        <span class="material-icons-outlined text-primary">difference</span>
+                                    </div>
+                                </td>
+                              </tr>
+    
+                              
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+                <%- include("./partials/footer.ejs") %>

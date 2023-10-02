@@ -1,0 +1,91 @@
+<%- include("./partials/body.ejs") %>
+            <div class="d-flex">
+                <p class="border-end border-secondary pe-3 lead fw-bold">Product Category</p>
+                <span class="material-icons-outlined text-primary ms-3">help</span>
+            </div>
+            <div class="w-100 p-4 border border-tertiary rounded">
+                <button class="btn btn-primary d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#myModal"><span class="material-icons-outlined">add</span> Add Product Category</button>
+            </div>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary">
+                      <h4 class="modal-title">Add Category</h4>
+                      <button type="button" class="btn-close border rounded-circle bg-body-tertiary" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form action="/submit" method="post">
+                            <div class="mb-3 mt-3">
+                              <label for="text" class="form-label">Category Name</label>
+                              <input type="text" class="form-control" id="text" placeholder="Category Name" name="category">
+                            </div>
+                            <div class="mb-3">
+                              <label for="Bname" class="form-label text-mute">BRAND NAME (SHOWN ON INVOICES)</label><br>
+                              <small class="text-mute">All products under this category will carry this brand name<small>
+                              <input type="text" class="form-control" id="Bname" placeholder="Brand Name" name="brandName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="BPnumber" class="form-label text-mute">BRAND PHONE NUMBER (SHOWN ON INVOICES)</label><br>
+                                <small class="text-mute">All products under this category will carry this brand phone number</small>
+                                <input type="text" class="form-control" id="BPnumber" placeholder="Brand PhoneNumber" name="brandphoneNumber">
+                            </div>
+                            <div class="mb-3">
+                                <label for="BWhatsapp" class="form-label">BRAND BUSINESS WHATSAPP NUMBER</label><br>
+                                <small class="text-mute">For Automatic Messaging (If any number is active under WhatsApp > Setup)</small>
+                                <select class="form-select" name="BrandWhatsappNumber">
+                                    <option value="None">None</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="BEmail" class="form-label">BRAND EMAIL (SHOWN ON INVOICES)</label><br>
+                                <small class="text-mute">All products under this category will carry this brand email</small>
+                                <input type="email" class="form-control" id="BEmail" placeholder="Brand Email" name="brandEmail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="senderId" class="form-label">SMS Sender ID</label><br>
+                                <small class="text-mute">All products under this category will use this sender ID while sending SMS to your customers</small>
+                                <input type="text" class="form-control" id="senderId placeholder="sender Id" name="senderId">
+                            </div>
+
+                            <div class="text-end mt-3">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                              <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                          </form>
+                          
+                    </div>
+                    
+              
+                  </div>
+                </div>
+              </div>
+                
+            <div class="card mt-3 shadow-lg bg-body rounded border-0">
+                <div class="card-body overflow-x-auto">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th>ID</th>
+                            <th class="w-5">CATEGORY NAME</th>
+                            <th>BRAND NAME</th>
+                            <th class="w-5">BRAND PHONE/EMAIL</th>
+                            <th class="w-5">BRAND WHATSAPP NUMBER</th>
+                            <th>SENDER ID</th>
+                            <th>ACTION</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <% if(locals.content) {%>
+                              <%content.forEach(post => {%>
+                                <%-post %>
+                              <%})%>
+                          <%}%>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+<%- include("./partials/footer.ejs") %>

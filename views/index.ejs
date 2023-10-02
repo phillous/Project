@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/css/signupstyle.css">
+    <link type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body class="h-100">
+    <div class="container-fluid">
+       <div class="row mx-auto w-75 border border-start-3 shadow-lg rounded align-items-center ">
+        <div class="col shadow-lg bg-white py-3 px-5 h-100">
+            <div class="text-center">
+               <img src="../public/images/Sniplogo.png" alt="">
+               <h1 class="my-3 text-dark">Sign In</h1>
+           </div>
+            <form action = "/login" class="form-control" method="post">
+                <div class="mb-3">
+                    <label for="userName" class="form-label small text-muted mb-0">Username</label>
+                    <input type="text" class="form-control mt-o" placeholder="Enter your store name" name="email" id="userName">
+                </div>
+                <div>
+                    <label for="password" class="form-label text-muted small mb-0">Password</label>
+                    <div class="input-group mb-3 mt-0">
+                        <input type="password" class="form-control" placeholder="Password" id="password" name="password">
+                        <span class="input-group-text"><span class="material-icons-outlined">
+                            visibility_off
+                            </span></span>
+                    </div>
+                </div>
+
+                <a href="#" class="text-decoration-none"><small>Forgot Password?</small></a>
+
+                <a href="/productCategory" class="btn submit btn-primary w-100">Sign in<span class="material-icons-outlined float-end fs-6">
+                    arrow_forward
+                    </span></a>
+
+                <hr><p class="text-center">Or</p><hr>
+                <a href="/signup" class="btn btn-success w-100">Sign Up<span class="material-icons-outlined float-end fs-6">
+                    arrow_forward
+                    </span></a>
+
+
+            </form>   
+            </div>
+            <div class="col bg-white-50 colcolor text-center h-100">
+               
+                <img src="../public/images/lock-screen.png" class="w-50 h-40">
+                
+            </div>
+       </div>    
+        
