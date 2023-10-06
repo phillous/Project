@@ -1,5 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const {requireAuth,checkUser} = require('../middleware/auth')
+
 
 const {
     register,
@@ -9,9 +11,9 @@ const {
     loginUser,
 } = require('../controller/main');
 
-router.get('/', register);
-router.get('/signIn', signIn);
-router.get('/productCategory', productCategory)
+router.get('/register', register);
+router.get('/login', signIn);
+router.get('/productCategory', requireAuth, productCategory)
 router.post('/register', signupUser);
 router.post('/login', loginUser)
 
